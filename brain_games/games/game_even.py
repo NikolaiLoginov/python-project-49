@@ -22,20 +22,22 @@ def game_even(name):
         number = random.randint(1, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer:')
-        if answer == 'yes' and is_even(number):
-            print('Correct!')
-            status += 1
-        elif answer == 'no' and not is_even(number):
-            print('Correct!')
-            status += 1
-        elif answer == 'yes' and not is_even(number):
-            print('"yes" is wrong answer ;(. Correct answer was "no".')
-            status = 4
-        elif answer == 'no' and is_even(number):
-            print('"no" is wrong answer ;(. Correct answer was "yes".')
-            status = 4
+        if answer == 'yes':
+            if is_even:
+                print('Correct!')
+                status += 1
+            else:
+                print('"yes" is wrong answer ;(. Correct answer was "no".')
+                status = 4
         else:
-            status = 4
+            if not is_even:
+                print('Correct!')
+                status += 1
+            else:
+                print('"no" is wrong answer ;(. Correct answer was "yes".')
+                status = 4
+    
+        
     if status == 3:
         print(f'Congratulations, {name}!')
     elif status == 4:
