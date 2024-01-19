@@ -15,12 +15,12 @@ def check_answer(user_answer, correct_answer):
         return False
 
 
-def launch_game(get_qustion):
+def launch_game(get_question):
     name = welcome_user()
-    print(get_qustion()[0])
+    print(get_question()[0])
 
     for _ in range(3):
-        _, question, correct_answer = get_qustion()
+        _, question, correct_answer = get_question()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
 
