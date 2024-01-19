@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.games.game_even import game_even, welcome_user
+from brain_games.games.game_even import get_question
+from brain_games.games.engine import launch_game
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-    game_even(name)
+    launch_game(get_question)
 
 
 if __name__ == '__main__':
