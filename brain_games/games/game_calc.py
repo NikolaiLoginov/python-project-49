@@ -15,10 +15,4 @@ def get_question():
     else:
         question = f'{first_operand} * {second_operand}'
         correct_answer = first_operand * second_operand
-    return question, correct_answer, question_text
-
-def check_answer(user_answer, correct_answer):
-    if user_answer == str(correct_answer):
-        return True
-    else:
-        return False
+    return question_text, question, correct_answer
