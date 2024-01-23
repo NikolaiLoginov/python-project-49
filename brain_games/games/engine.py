@@ -27,14 +27,11 @@ def launch_game(get_question):
         if check_answer(user_answer, correct_answer):
             print('Correct!')
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. Correct answer was "
+                f"'{correct_answer}'."
+            )
             print(f"Let's try again, {name}!")
             break
     else:
         print(f'Congratulations, {name}!')
-
-
-
-
-
-    

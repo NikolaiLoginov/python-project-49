@@ -9,4 +9,3 @@ def get_question():
     else:
         correct_answer = 'no'
     return question_text, question, correct_answer
-
