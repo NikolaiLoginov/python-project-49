@@ -22,13 +22,12 @@ ipykernel = "^6.29.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry.classifiers]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Topic :: Education",
   "Operating System :: POSIX",
   "Operating System :: Unix",
-  "Framework :: Flake8"
-
   ]
 
 [tool.poetry.scripts]
