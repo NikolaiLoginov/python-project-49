@@ -9,10 +9,16 @@ packages = [
   { include = "brain_games" },
 ]
 
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Education",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+  ]
+
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
-
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.0.0"
@@ -21,14 +27,6 @@ ipykernel = "^6.29.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.classifiers]
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "Topic :: Education",
-  "Operating System :: POSIX",
-  "Operating System :: Unix",
-  ]
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
