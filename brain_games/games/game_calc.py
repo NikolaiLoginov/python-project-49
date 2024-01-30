@@ -1,8 +1,10 @@
 import random
 
 
+QUESTION_TEXT = 'What is the result of the expression?'
+
+
 def get_question():
-    question_text = 'What is the result of the expression?'
     task_index = random.randint(1, 3)
     first_operand = random.randint(1, 20)
     second_operand = random.randint(1, 20)
@@ -15,4 +17,4 @@ def get_question():
     else:
         question = f'{first_operand} * {second_operand}'
         correct_answer = first_operand * second_operand
-    return question_text, question, correct_answer
+    return question, correct_answer
