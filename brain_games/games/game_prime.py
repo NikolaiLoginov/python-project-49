@@ -1,12 +1,14 @@
 import random
 
 
-QUESTION_TEXT = ('Answer "yes" if given number is prime.'
-                 ' Otherwise answer "no".')
+GAME_RULE_TEXT = ('Answer "yes" if given number is prime.'
+             ' Otherwise answer "no".')
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def get_question():
-    question = random.randint(1, 100)
+def get_question_and_answer():
+    question = random.randint(MIN_NUMBER, MAX_NUMBER)
     if is_prime(question):
         correct_answer = 'yes'
     else:
